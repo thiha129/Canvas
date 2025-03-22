@@ -1,14 +1,13 @@
-const jsonfile = require("jsonfile");
-const moment = require("moment");
-const random = require("random");
-const simpleGit = require("simple-git");
-
+import jsonfile from "jsonfile";
+import moment from "moment";
+import simpleGit from "simple-git";
+import random from "random";
 
 const path = "./data.json";
 
 const isValidDate = (date) => {
-    const startDate = moment("2019-01-01");
-    const endDate = moment("2024-12-13");
+    const startDate = moment("2024-01-01");
+    const endDate = moment("2025-12-13");
     return date.isBetween(startDate, endDate, null, "[]");
 };
 
