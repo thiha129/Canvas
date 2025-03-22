@@ -6,7 +6,7 @@ import random from "random";
 const path = "./data.json";
 
 const isValidDate = (date) => {
-    const startDate = moment("2024-01-01");
+    const startDate = moment("2023-01-01");
     const endDate = moment("2025-12-13");
     return date.isBetween(startDate, endDate, null, "[]");
 };
